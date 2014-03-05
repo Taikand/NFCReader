@@ -1,0 +1,53 @@
+﻿Build started 3/5/2014 4:53:51 PM.
+     1>Project "D:\Visual Studio\ConsoleApplication28\ConsoleApplication28.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\ConsoleApplication28.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt ConsoleApplication28.cpp
+         ConsoleApplication28.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio\ConsoleApplication28\x64\Debug\ConsoleApplication28.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Visual Studio\ConsoleApplication28\\" /LTCG:STATUS ctacs.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Visual Studio\ConsoleApplication28\x64\Debug\ConsoleApplication28.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio\ConsoleApplication28\x64\Debug\ConsoleApplication28.lib" /MACHINE:X64 x64\Debug\ConsoleApplication28.obj
+         x64\Debug\stdafx.obj
+         ctacs.lib
+     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         ConsoleApplication28.vcxproj -> D:\Visual Studio\ConsoleApplication28\x64\Debug\ConsoleApplication28.exe
+       PostBuildEvent:
+         (robocopy "D:\Visual Studio\ConsoleApplication28\ "   "D:\Visual Studio\ConsoleApplication28\x64\Debug\ " ctacs.ini )  ^& IF %ERRORLEVEL% LEQ 1 exit 0
+         :VCEnd
+         
+         -------------------------------------------------------------------------------
+            ROBOCOPY     ::     Robust File Copy for Windows                              
+         -------------------------------------------------------------------------------
+         
+           Started : Wednesday, March 5, 2014 4:53:56 PM
+            Source : D:\Visual Studio\ConsoleApplication28\
+              Dest : D:\Visual Studio\ConsoleApplication28\x64\Debug\
+         
+             Files : ctacs.ini
+         	    
+           Options : /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+         
+         ------------------------------------------------------------------------------
+         
+         	                   1	D:\Visual Studio\ConsoleApplication28\
+         	    Older     		     149	ctacs.ini
+           0%  
+         100%  
+         
+         ------------------------------------------------------------------------------
+         
+                        Total    Copied   Skipped  Mismatch    FAILED    Extras
+             Dirs :         1         0         0         0         0         0
+            Files :         1         1         0         0         0         0
+            Bytes :       149       149         0         0         0         0
+            Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+         
+         
+            Speed :               37250 Bytes/sec.
+            Speed :               2.131 MegaBytes/min.
+            Ended : Wednesday, March 5, 2014 4:53:56 PM
+         
+     1>Done Building Project "D:\Visual Studio\ConsoleApplication28\ConsoleApplication28.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.96
