@@ -32,5 +32,12 @@ int main(void)
 		cout << "Error getting readers.";
 		return -1;
 	}
+
+	/*DWORD activeProtocol;
+	LPSCARDHANDLE
+
+	ret = SCardConnect(context, readerList, SCARD_SHARE_SHARED, SCARD_PROTOCOL_T0 | SCARD_PROTOCOL_T1,)
+*/
+
 	return 0;
 }
