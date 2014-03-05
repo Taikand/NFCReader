@@ -14,6 +14,23 @@ using namespace std;
 
 int main(void)
 {
+	SCARDCONTEXT context;
+	LONG ret;
+	ret=SCardEstablishContext(SCARD_SCOPE_USER, NULL, NULL, &context);
+	if (ret != SCARD_S_SUCCESS)
+	{
+		cout << "Error establishing context.";
+		return -1;
+	}
 
- return 0;
+	LPWSTR readerList;
+	DWORD bufferSize = SCARD_AUTOALLOCATE;
+	ret = SCardListReaders(context, NULL, (LPWSTR)&readerList, &bufferSize);
+
+	if (ret != SCARD_S_SUCCESS)
+	{
+		cout << "Error getting readers.";
+		return -1;
+	}
+	return 0;
 }
